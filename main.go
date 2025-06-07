@@ -118,7 +118,7 @@ func main() {
 			return
 		}
 
-		modelName := request["name"]
+		modelName := request["model"]
 		if modelName == "" {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "Model name is required"})
 			return
